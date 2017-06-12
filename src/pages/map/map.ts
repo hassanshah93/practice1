@@ -48,12 +48,8 @@ export class MapPage {
     });
 
 
-    let marker = new google.maps.Marker({
-      map: this.map,
-      animation: google.maps.Animation.DROP,
-      position: this.map.getCenter()
-    });
-    let content = "<h3>My New Location!</h3><h5>by Anish youtube - Please subscribe</h5>";
+    
+    
 
 
 
@@ -65,24 +61,7 @@ export class MapPage {
 
   
 
-  addMarker() { // To Add Marker
-  	console.log();
-    let marker = new google.maps.Marker({
-      map: this.map,
-      animation: google.maps.Animation.DROP,
-      position: this.map.getCenter()
-    });
-    let content = "<h3>My New Location!</h3><h5>by Anish youtube - Please subscribe</h5>";
-    this.addInfoWindow(marker, content);
-  }
- 
-  addInfoWindow(marker, content) {
-    let infoWindow = new google.maps.InfoWindow({
-      content: content
-    });
-    google.maps.event.addListener(marker, 'click', () => {
-      infoWindow.open(this.map, marker);
-    });
+  
   }
 
-}
+
